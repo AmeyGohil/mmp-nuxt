@@ -15,13 +15,16 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  ssr:false,
+  target: 'static',
+  devtools: true,
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+  
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -31,10 +34,16 @@ export default {
   buildModules: [
   ],
 
+  strapi:{
+    url: process.env.STRAPI_URL
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/strapi',
+    '@nuxtjs/dotenv'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
