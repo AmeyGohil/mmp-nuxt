@@ -4,7 +4,7 @@
         <h1>Register</h1>
         <div class="container">
             <div class="sign-up-content">
-                <form method="POST" class="signup-form">
+                <form @submit.prevent="userRegister" class="signup-form">
                     <h2 class="form-title">Register as</h2>
                     <div class="form-radio">
                         <input type="radio" name="user_type" value="manufacturer" id="manufacturer" checked="checked" />
@@ -90,7 +90,7 @@
                 </form>
 
                 <p class="footnote">
-                    Already have an account ?<a href="login.html" class="footnote-link"> Log in</a>
+                    Already have an account ?<a href="login" class="footnote-link"> Log in</a>
                 </p>
             </div>
         </div>
@@ -101,6 +101,37 @@
 <script>
   export default {
     layout: 'auth',
+    data(){
+    return{
+        registerData:{
+            username:'',
+            email:'',
+            password:'',
+            role: 'customer'
+        },
+        showLoading: false,
+        }
+	},
+    methods:{
+        async userRegister(){
+        try{
+            this.showLoading = true;
+            console.log("register prcoess started...");
+        
+            let response = await this.$strapi.register(this.registerData);
+
+            console.log("RESPONSE:",response);
+            console.log("USER:",this.$strapi.user);
+
+            this.$router.push("/customer");
+        }
+        catch(e){
+            console.log("err:",e);
+            alert(e);
+            this.showLoading=false;
+        }
+        },
+    }
   };
 </script>
 
