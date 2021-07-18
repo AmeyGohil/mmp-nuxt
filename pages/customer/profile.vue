@@ -1,12 +1,16 @@
 <template>
   <div>
-      Manufacturer
   </div>
 </template>
 
 <script>
 export default {
-  layout:'manufacturer'
+  layout:'customer',
+  data(){
+    return{
+
+    }
+  }
 }
 </script>
 
