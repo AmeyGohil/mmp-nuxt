@@ -6,9 +6,9 @@
           Make My Part
         </h5>
         <b-nav vertical>
-          <b-nav-item><nuxt-link class="nav-link" to="/customer">Upload Quotation</nuxt-link></b-nav-item>
-          <b-nav-item><nuxt-link class="nav-link" to="/customer/projects">My Projects</nuxt-link></b-nav-item>
-          <b-nav-item><nuxt-link class="nav-link" to="/customer/profile">Profile</nuxt-link></b-nav-item>
+          <b-nav-item><nuxt-link class="nav-link" to="/manufacturer">View available orders</nuxt-link></b-nav-item>
+          <b-nav-item><nuxt-link class="nav-link" to="/manufacturer/projects">My Projects</nuxt-link></b-nav-item>
+          <b-nav-item><nuxt-link class="nav-link" to="/manufacturer/profile">Profile</nuxt-link></b-nav-item>
         </b-nav>
       </nav>
    
@@ -22,7 +22,7 @@
 <script>
 export default {
 
-  middleware: 'authCustomer',
+  middleware: 'authManufacturer',
   data () {
     return {
       
