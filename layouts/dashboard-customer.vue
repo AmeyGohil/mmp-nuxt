@@ -45,31 +45,40 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 				link: [
 					{
 						rel: "apple-touch-icon",
-						href: "assets/img/apple-touch-icon.png",
+						href: require("~/assets/img/apple-touch-icon.png"),
 					},
 					{
 						rel: "stylesheet",
 						href: "https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i",
 					},
-					{ rel: "stylesheet", href: "https://use.fontawesome.com/releases/v5.12.0/css/all.css" },
-					{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" },
-					{
-						rel: "stylesheet",
-						href: "assets/bootstrap/css/bootstrap.min.css",
+					{ 
+						rel: "stylesheet", 
+						href: "https://use.fontawesome.com/releases/v5.12.0/css/all.css" 
+					},
+					{ 
+						rel: "stylesheet", 
+						href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
 					},
 					{
 						rel: "stylesheet",
-						href: "assets/vendor/bootstrap-icons/bootstrap-icons.css",
+						href: require("~/assets/bootstrap/css/bootstrap.min.css"),
 					},
 					{
 						rel: "stylesheet",
-						href: "assets/fonts/fontawesome5-overrides.min.css",
+						href: require("~/assets/vendor/bootstrap-icons/bootstrap-icons.css"),
 					},
-					{ rel: "stylesheet", href: "assets/css/dashboard/styles.min.css" },
+					{
+						rel: "stylesheet",
+						href: require("~/assets/fonts/fontawesome5-overrides.min.css"),
+					},
+					{ 
+						rel: "stylesheet", 
+						href: require("~/assets/css/dashboard/styles.min.css") 
+					},
 					{
 						rel: "icon",
 						type: "image/x-icon",
-						href: "assets/img/favicon.png",
+						href: "/assets/img/favicon.png",
 					},
 				],
 				script: [
@@ -82,7 +91,7 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 						body: true,
 					},
 					{
-						src: "assets/js/dashboard/script.min.js",
+						src: "/assets/js/dashboard/script.min.js",
 						body: true,
 					},
 				],
@@ -92,4 +101,8 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 </script>
 
 <style>
+/* @import "~/assets/bootstrap/css/bootstrap.min.css";
+@import "~/assets/vendor/bootstrap-icons/bootstrap-icons.css";
+@import "~/assets/fonts/fontawesome5-overrides.min.css";
+@import "~/assets/css/dashboard/styles.min.css"; */
 </style>
