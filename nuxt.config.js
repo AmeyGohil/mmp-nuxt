@@ -34,13 +34,13 @@ export default {
   ],
 
   strapi:{
-    url: process.env.STRAPI_URL
+    url: "http://api-makemypart.herokuapp.com"
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
+    // 'bootstrap-vue/nuxt',
     '@nuxtjs/strapi',
     '@nuxtjs/dotenv'
   ],
