@@ -37,13 +37,13 @@ export default {
   ],
 
   strapi:{
-    url: "http://api-makemypart.herokuapp.com"
+    url: process.env.STRAPI_URL || "https://api-makemypart.herokuapp.com"
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    // 'bootstrap-vue/nuxt',
+    'bootstrap-vue/nuxt',
     '@nuxtjs/strapi',
     '@nuxtjs/dotenv'
   ],
@@ -52,6 +52,9 @@ export default {
   build: {
   },
 
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
 
   router: {
     linkActiveClass: 'active'

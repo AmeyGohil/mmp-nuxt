@@ -45,7 +45,7 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 				link: [
 					{
 						rel: "apple-touch-icon",
-						href: require("~/assets/img/apple-touch-icon.png"),
+						href: `${process.env.baseUrl}/assets/img/apple-touch-icon.png`
 					},
 					{
 						rel: "stylesheet",
@@ -61,19 +61,19 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 					},
 					{
 						rel: "stylesheet",
-						href: require("~/assets/bootstrap/css/bootstrap.min.css"),
+						href: `${process.env.baseUrl}/assets/bootstrap/css/bootstrap.min.css`
 					},
 					{
 						rel: "stylesheet",
-						href: require("~/assets/vendor/bootstrap-icons/bootstrap-icons.css"),
+						href: `${process.env.baseUrl}/assets/vendor/bootstrap-icons/bootstrap-icons.css`
 					},
 					{
 						rel: "stylesheet",
-						href: require("~/assets/fonts/fontawesome5-overrides.min.css"),
+						href: `${process.env.baseUrl}/assets/fonts/fontawesome5-overrides.min.css`
 					},
 					{ 
 						rel: "stylesheet", 
-						href: require("~/assets/css/dashboard/styles.min.css") 
+						href: `${process.env.baseUrl}/assets/css/dashboard/styles.min.css`
 					},
 					{
 						rel: "icon",
@@ -91,7 +91,7 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 						body: true,
 					},
 					{
-						src: "/assets/js/dashboard/script.min.js",
+						src: `${process.env.baseUrl}/assets/js/dashboard/script.min.js`,
 						body: true,
 					},
 				],

@@ -45,31 +45,40 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 				link: [
 					{
 						rel: "apple-touch-icon",
-						href: "assets/img/apple-touch-icon.png",
+						href: `${process.env.baseUrl}/assets/img/apple-touch-icon.png`
 					},
 					{
 						rel: "stylesheet",
 						href: "https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i",
 					},
-					{ rel: "stylesheet", href: "https://use.fontawesome.com/releases/v5.12.0/css/all.css" },
-					{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" },
-					{
-						rel: "stylesheet",
-						href: "assets/bootstrap/css/bootstrap.min.css",
+					{ 
+						rel: "stylesheet", 
+						href: "https://use.fontawesome.com/releases/v5.12.0/css/all.css" 
+					},
+					{ 
+						rel: "stylesheet", 
+						href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
 					},
 					{
 						rel: "stylesheet",
-						href: "assets/vendor/bootstrap-icons/bootstrap-icons.css",
+						href: `${process.env.baseUrl}/assets/bootstrap/css/bootstrap.min.css`
 					},
 					{
 						rel: "stylesheet",
-						href: "assets/fonts/fontawesome5-overrides.min.css",
+						href: `${process.env.baseUrl}/assets/vendor/bootstrap-icons/bootstrap-icons.css`
 					},
-					{ rel: "stylesheet", href: "assets/css/dashboard/styles.min.css" },
+					{
+						rel: "stylesheet",
+						href: `${process.env.baseUrl}/assets/fonts/fontawesome5-overrides.min.css`
+					},
+					{ 
+						rel: "stylesheet", 
+						href: `${process.env.baseUrl}/assets/css/dashboard/styles.min.css`
+					},
 					{
 						rel: "icon",
 						type: "image/x-icon",
-						href: "assets/img/favicon.png",
+						href: "/assets/img/favicon.png",
 					},
 				],
 				script: [
@@ -82,7 +91,7 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 						body: true,
 					},
 					{
-						src: "assets/js/dashboard/script.min.js",
+						src: `${process.env.baseUrl}/assets/js/dashboard/script.min.js`,
 						body: true,
 					},
 				],
