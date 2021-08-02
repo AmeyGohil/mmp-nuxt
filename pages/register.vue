@@ -3,116 +3,105 @@
 
         <h1>Register</h1>
         <div class="container">
-            <div class="sign-up-content"> 
-                
-                <b-collapse v-model="registerDialog.step1">
+            <div class="sign-up-content">
+                <div class="signup-form">
                     <h2 class="form-title">Register as</h2>
-                    <div class="text-center">
-                      <b-button-group size="lg">
-                        <b-button 
-                          variant="success" 
-                          v-on:click="openRegisterManufacturer">
-                          Manufacturer
-                        </b-button>
-                        <b-button 
-                          variant="warning"
-                          v-on:click="openRegisterCustomer">
-                          Customer
-                        </b-button>
-                      </b-button-group>
-                    </div>
-                </b-collapse>
+                    <div class="form-radio">
+                        <input v-model="userType" type="radio" name="user_type" value="manufacturer" id="manufacturer" checked="checked" />
+                        <label for="manufacturer">Manufacturer</label>
 
-                <b-collapse v-model="registerDialog.step2.customer">
-                  <form @submit.prevent="registerCustomer">
-                    <div class="form-textbox customer">
-                        <label for="customer-organization">User Name</label>
-                        <input type="text" name="customer-organization" id="customer-organization" v-model="customerData.username" required/>
+                        <input v-model="userType" type="radio" name="user_type" value="customer" id="customer" />
+                        <label for="customer">Customer</label>
+                    </div>
+                    <form form @submit.prevent="submitForm">
+                    <div class="form-textbox customer" style="display: none;">
+                        <label for="customer-name">Name</label>
+                        <input v-model="customerData.username" type="text" name="customer-name" id="customer-name" required/>
                     </div>
 
-                    <div class="form-textbox customer" >
+                    <div class="form-textbox customer" style="display: none;">
+                        <label for="customer-organization">Organization</label>
+                        <input v-model="customerData.organization" type="text" name="customer-organization" id="customer-organization" required />
+                    </div>
+
+                    <div class="form-textbox customer" style="display: none;">
                         <label for="customer-email">Email</label>
-                        <input type="email" name="customer-email" id="customer-email" v-model="customerData.email" required/>
+                        <input v-model="customerData.email" type="email" name="customer-email" id="customer-email" required />
                     </div>
 
-                    <div class="form-textbox customer" >
+                    <div class="form-textbox customer" style="display: none;">
                         <label for="customer-pass">Password</label>
-                        <input type="password" name="customer-pass" id="customer-pass" v-model="customerData.password" required/>
+                        <input v-model="customerData.password" type="password" name="customer-pass" id="customer-pass" required />
                     </div>
 
-                    <div class="form-textbox customer" >
+                    <div class="form-textbox customer" style="display: none;">
                         <label for="customer-mobile">Mobile No.</label>
-                        <input type="text" name="customer-mobile" id="customer-mobile" v-model="customerData.mobile" required/>
+                        <input v-model="customerData.mobile" type="text" name="customer-mobile" id="customer-mobile" required />
                     </div>
 
-                    <div class="form-textbox customer" >
+                    <div class="form-textbox customer" style="display: none;">
                         <label for="customer-address">Address</label>
-                        <input type="text" name="customer-address" id="customer-address" v-model="customerData.address" required/>
+                        <input v-model="customerData.address" type="text" name="customer-address" id="customer-address" required />
                     </div>
 
-                    <!-- <div class="form-textbox customer" >
+                    <div class="form-textbox customer" style="display: none;">
                         <label for="customer-gst">GST</label>
-                        <input type="text" name="customer-gst" id="customer-gst" v-model="customerData.gst"/>
-                    </div> -->
-
-                    <div class="form-group">
-                        <b-form-checkbox name="agree-term" v-model="customerData.agreeTerms" class="agree-term" >
-                        I agree all statements in  <a href="#" class="term-service">Terms of service</a>
-                        </b-form-checkbox>
+                        <input v-model="customerData.gstNo" type="text" name="customer-gst" id="customer-gst" required />
+                    </div>
+                    <div class="form-group customer" style="display: none;">
+                        <input v-model="customerData.agreeTerms" type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>
 
-                    <div class="form-textbox">
+                    <div class="form-textbox customer" style="display: none;">
                         <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
                     </div>
+                    </form>
 
-                  </form>
-                </b-collapse>
-
-                <b-collapse v-model="registerDialog.step2.manufacturer">
-                  <form @submit.prevent="registerManufacturer">
-
+                    <form form @submit.prevent="submitForm">
                     <div class="form-textbox manufacturer">
                         <label for="manufacturer-company">Company</label>
-                        <input type="text" name="manufacturer-company" id="manufacturer-company" v-model="manufacturerData.username" required/>
+                        <input v-model="manufacturerData.username" type="text" name="manufacturer-company" id="manufacturer-company" required />
                     </div>
 
                     <div class="form-textbox manufacturer">
                         <label for="manufacturer-email">Email</label>
-                        <input type="email" name="manufacturer-email" id="manufacturer-email"  v-model="manufacturerData.email" required/>
+                        <input v-model="manufacturerData.email" type="email" name="manufacturer-email" id="manufacturer-email" required />
                     </div>
 
                     <div class="form-textbox manufacturer">
                         <label for="manufacturer-pass">Password</label>
-                        <input type="password" name="manufacturer-pass" id="manufacturer-pass"  v-model="manufacturerData.password" required/>
+                        <input v-model="manufacturerData.password" type="password" name="manufacturer-pass" id="manufacturer-pass" required />
                     </div>
 
                     <div class="form-textbox manufacturer">
                         <label for="manufacturer-mnp">Machines and <br>Processes</label>
-                        <input type="text" name="manufacturer-mnp" id="manufacturer-mnp"  v-model="manufacturerData.description" required/>
+                        <input v-model="manufacturerData.description" type="text" name="manufacturer-mnp" id="manufacturer-mnp" required />
                     </div>
 
                     <div class="form-textbox manufacturer">
-                        <label for="manufacturer-gst">GST No</label>
-                        <input type="text" name="manufacturer-gst" id="manufacturer-gst"  v-model="manufacturerData.gstno" required/>
+                        <label for="manufacturer-gst">GST</label>
+                        <input v-model="manufacturerData.gstNo" type="text" name="manufacturer-gst" id="manufacturer-gst" required />
                     </div>
 
                     <div class="form-textbox manufacturer">
                         <label for="manufacturer-address">Address</label>
-                        <input type="text" name="manufacturer-address" id="manufacturer-address"  v-model="manufacturerData.address" required/>
+                        <input v-model="manufacturerData.address" type="text" name="manufacturer-address" id="manufacturer-address" required />
                     </div>
-                    <div class="form-group">
-                        <b-form-checkbox name="agree-term" v-model="manufacturerData.agreeTerms" class="agree-term" >
-                        I agree all statements in  <a href="#" class="term-service">Terms of service</a>
-                        </b-form-checkbox>
+
+                    <div class="form-group manufacturer">
+                        <input v-model="manufacturerData.agreeTerms" type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>
-                    <div class="form-textbox">
+
+                    <div class="form-textbox manufacturer">
                         <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
                     </div>
-                  </form>
-                </b-collapse>
-                    
+                    </form>
+                </div>
+
                 <p class="footnote">
-                    Already have an account ?<a href="login" class="footnote-link"> Log in</a>
+                    Already have an account ?<nuxt-link to="login" class="footnote-link"> Log in</nuxt-link>
                 </p>
             </div>
         </div>
@@ -126,19 +115,14 @@
     data(){
       return{
         showLoading: false,
-        registerDialog:{
-          step1:true,
-          step2:{
-            manufacturer:false,
-            customer:false
-          }
-        },
+        userType:'manufacturer',
         customerData:{
           username:'',
+          organization:'',
           email:'',
           password:'',
           role: 'customer',
-          gst:'',
+          gstNo:'',
           address:'',
           mobile:'',
           agreeTerms: false
@@ -148,7 +132,7 @@
           email:'',
           password:'',
           role: 'manufacturer',
-          gstno:'',
+          gstNo:'',
           address:'',
           mobile:'',
           description:'',
@@ -208,6 +192,15 @@
             alert(e);
             this.showLoading=false;
         }
+      },
+      submitForm(){
+         console.log("isUserTypeManufacturer", this.userType) 
+         if(this.userType==='customer'){
+            this.registerCustomer()
+         }
+         else{
+             this.registerManufacturer()
+         }
       }
     }
   };
