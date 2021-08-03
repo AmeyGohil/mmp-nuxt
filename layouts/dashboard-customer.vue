@@ -18,6 +18,7 @@ import DashboardFooter from '../components/DashboardFooter.vue';
 import DashboardHeader from '../components/DashboardHeader.vue';
 import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 	export default {
+		middleware: 'authCustomer',
 		components: {DashboardSideMenu, DashboardFooter, DashboardHeader, DashboardBackToTop},
 		data() {
 			return {

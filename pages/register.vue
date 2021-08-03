@@ -31,7 +31,7 @@
 
                     <div class="form-textbox customer" style="display: none;">
                         <label for="customer-pass">Password</label>
-                        <input v-model="customerData.password" type="password" name="customer-pass" id="customer-pass" required />
+                        <input v-model="customerData.password" type="password" name="customer-pass" id="customer-pass" autocomplete="off" required />
                     </div>
 
                     <div class="form-textbox customer" style="display: none;">
@@ -48,13 +48,13 @@
                         <label for="customer-gst">GST</label>
                         <input v-model="customerData.gstNo" type="text" name="customer-gst" id="customer-gst" required />
                     </div>
-                    <div class="form-group customer" style="display: none;">
-                        <input v-model="customerData.agreeTerms" type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                    <!-- <div class="form-group customer" style="display: none;">
+                        <input type="checkbox" name="agree" id="agree"/>
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
-                    </div>
+                    </div> -->
 
                     <div class="form-textbox customer" style="display: none;">
-                        <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
+                        <input type="submit" name="submit" id="submit-customer" class="submit" value="Create account" />
                     </div>
                     </form>
 
@@ -71,7 +71,7 @@
 
                     <div class="form-textbox manufacturer">
                         <label for="manufacturer-pass">Password</label>
-                        <input v-model="manufacturerData.password" type="password" name="manufacturer-pass" id="manufacturer-pass" required />
+                        <input v-model="manufacturerData.password" type="password" name="manufacturer-pass" id="manufacturer-pass" autocomplete="off" required />
                     </div>
 
                     <div class="form-textbox manufacturer">
@@ -90,12 +90,12 @@
                     </div>
 
                     <div class="form-group manufacturer">
-                        <input v-model="manufacturerData.agreeTerms" type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                     </div>
 
                     <div class="form-textbox manufacturer">
-                        <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
+                        <input type="submit" name="submit" id="submit-manufacturer" class="submit" value="Create account" />
                     </div>
                     </form>
                 </div>
@@ -125,7 +125,7 @@
           gstNo:'',
           address:'',
           mobile:'',
-          agreeTerms: false
+          agreeTerms: true
         },
         manufacturerData:{
           username:'',
@@ -136,7 +136,7 @@
           address:'',
           mobile:'',
           description:'',
-          agreeTerms: false
+          agreeTerms: true
         }
       }
     },
