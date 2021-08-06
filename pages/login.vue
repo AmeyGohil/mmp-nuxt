@@ -56,10 +56,12 @@
             
             console.log("RESPONSE:",response);
             console.log("RESPONSE(user):",this.$strapi.user);
-            if(this.$strapi.user.role.name=='Customer')
+            if(this.$strapi.user.role.name==='customer')
               this.$router.push("/customer");
-            else
+            else if(this.$strapi.user.role.name==='manufacturer')
               this.$router.push("/manufacturer")
+            else 
+              this.$router.push("/")
           }
           catch(e){
             console.log("err:",e);
