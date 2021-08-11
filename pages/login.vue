@@ -1,7 +1,7 @@
 <template>
     <div class="main">
 
-        <h1>Login</h1>
+        <!-- <h1>Login</h1> -->
         <div class="container">  
             <div class="sign-up-content">
                 <form @submit.prevent="userLogin()" class="signup-form">

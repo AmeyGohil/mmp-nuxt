@@ -8,7 +8,7 @@
                     <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Change Photo</button></div>
                 </div>
             </div>
-            <div class="card shadow mb-4">
+            <!-- <div class="card shadow mb-4">
                 <div class="card-header py-3">
                     <h6 class="text-primary fw-bold m-0">Projects</h6>
                 </div>
@@ -34,7 +34,7 @@
                         <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="col-lg-8">
             <div class="row mb-3 d-none">
@@ -121,7 +121,7 @@
             </div>
         </div>
     </div>
-    <div class="card shadow mb-5">
+    <!-- <div class="card shadow mb-5">
         <div class="card-header py-3">
             <p class="text-primary m-0 fw-bold">Forum Settings</p>
         </div>
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
