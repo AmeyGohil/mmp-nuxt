@@ -113,7 +113,7 @@
                             <td>$433,060</td>
                         </tr>
                     </tbody>
-                    <tfoot>
+                    <!-- <tfoot>
                         <tr>
                             <td><strong>Name</strong></td>
                             <td><strong>Position</strong></td>
@@ -122,7 +122,7 @@
                             <td><strong>Start date</strong></td>
                             <td><strong>Salary</strong></td>
                         </tr>
-                    </tfoot>
+                    </tfoot> -->
                 </table>
             </div>
             <div class="row">
