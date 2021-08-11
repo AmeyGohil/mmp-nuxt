@@ -1,7 +1,7 @@
 <template>
     <div class="main">
 
-        <h1>Register</h1>
+        <!-- <h1>Register</h1> -->
         <div class="container">
             <div class="sign-up-content">
                 <div class="signup-form">
