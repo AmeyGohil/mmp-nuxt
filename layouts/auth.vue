@@ -31,25 +31,28 @@
 				link: [
 					{
 						rel: "apple-touch-icon",
-						href: "assets/img/apple-touch-icon.png",
+						href: `${process.env.baseUrl}/assets/img/apple-touch-icon.png`
 					},
 					{
 						rel: "stylesheet",
-						href: "assets/fonts/material-icon/css/material-design-iconic-font.min.css",
+						href: `${process.env.baseUrl}/assets/fonts/material-icon/css/material-design-iconic-font.min.css`,
 					},
-					{ rel: "stylesheet", href: "assets/vendor/aos/aos.css" },
+					{ 
+						rel: "stylesheet", 
+						href: `${process.env.baseUrl}/assets/vendor/aos/aos.css`
+					},
 					{
 						rel: "stylesheet",
-						href: "assets/css/auth/style.css",
+						href: `${process.env.baseUrl}/assets/css/auth/style.css`,
 					},
 				],
 				script: [
 					{
-						src: "assets/vendor/jquery/jquery.min.js",
+						src: `${process.env.baseUrl}/assets/vendor/jquery/jquery.min.js`,
 						body: true,
 					},
 					{
-						src: "assets/js/auth/main.js",
+						src: `${process.env.baseUrl}/assets/js/auth/main.js`,
 						body: true,
 					},
 				],

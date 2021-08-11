@@ -15,7 +15,12 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  static: {
+    prefix: false
+  },
+
   target: 'static',
+
   devtools: true,
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -34,7 +39,7 @@ export default {
   ],
 
   strapi:{
-    url: "http://api-makemypart.herokuapp.com"
+    url: process.env.STRAPI_URL || "https://api-makemypart.herokuapp.com"
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -47,6 +52,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
 
   router: {

@@ -9,12 +9,12 @@
 
                     <div class="form-textbox">
                         <label for="login-email">Email</label>
-                        <input type="email" name="login-email" id="login-email" v-model="loginData.identifier"/>
+                        <input type="email" name="login-email" id="login-email" v-model="loginData.identifier" autocomplete/>
                     </div>
 
                     <div class="form-textbox manufacturer">
                         <label for="login-pass">Password</label>
-                        <input type="password" name="login-pass" id="login-pass" v-model="loginData.password"/>
+                        <input type="password" name="login-pass" id="login-pass" v-model="loginData.password" autocomplete/>
                     </div>
 
                     <div class="form-textbox">
