@@ -1,9 +1,6 @@
 <template>
   <div class="container-fluid">
     <h3 class="text-dark mb-4">Profile</h3>
-    <h4>
-        {{ $strapi.user }}
-        </h4>
     <div class="row mb-3">
         <div class="col-lg-4">
             <div class="card mb-3">
@@ -114,7 +111,7 @@
                                     </div>
                                 </div> -->
                                 <!-- <div class="mb-3"></div> -->
-                                <div class="mb-3"><label class="form-label" for="contact"><strong>Contact Number</strong></label><input v-model="userData.phone" class="form-control" type="tel" id="contact" placeholder="Mobile No." name="contact"></div>
+                                <div class="mb-3"><label class="form-label" for="contact"><strong>Contact Number</strong></label><input v-model="userData.mobile" class="form-control" type="tel" id="contact" placeholder="Mobile No." name="contact"></div>
                                 <!-- <div class="mb-3"><label class="form-label" for="address"><strong>Pin Code</strong></label><input type="text" id="address-2" placeholder="Sunset Blvd, 38" name="address"></div> -->
                                 <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Save Settings</button></div>
                             </form>

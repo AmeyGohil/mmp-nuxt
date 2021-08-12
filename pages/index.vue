@@ -15,32 +15,109 @@
             <button type="button" data-bs-target="#services-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#services-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#services-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#services-slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#services-slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#services-slider" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#services-slider" data-bs-slide-to="6" aria-label="Slide 7"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="card" style='background-image: url("assets/img/more-services-1.jpg");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card" style='background-image: url("/assets/img/services/industry-technology-machine-machining-machinery-industrial.jpg");' data-aos="fade-up" data-aos-delay="100">
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">Lobira Duno</a></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                  <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                  <h5 class="card-title"><nuxt-link to="services">CNC Milling</nuxt-link></h5>
+                  <p class="card-text">
+                        Milling is the process of machining using rotary cutters to remove material by advancing a cutter into a workpiece. We provide cutting-edge milling services offered by our partners to deliver products according to your requirements. 
+                        <br>
+                        Milling is best applied as a secondary process to an already machined workpiece. It helps to define features and serves as a “finishing coat”. Use milling as a secondary process to add features such as holes, slots, pockets, and contours.
+                  </p>
+                  <br>
+                  <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style='background-image: url("assets/img/more-services-2.jpg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card" style='background-image: url("/assets/img/services/cnc%20turning.jpg");' data-aos="fade-up" data-aos-delay="200">
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">Limere Radses</a></h5>
-                  <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
-                  <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                  <h5 class="card-title"><nuxt-link to="services">CNC Turning</nuxt-link></h5>
+                  <p class="card-text">
+                    Turning involves rotation of the work piece while the cutting tool moves in a linear motion. This results in a cylindrical shape. A lathe is the machine of choice for all turning operations.
+                    <br>
+                        Our partners have industry-standard lathe machines for all your turning requirements. We offer both CNC and manual lathes depending on your needs and budget.
+                    <br>
+                        The benefits of turning are - good tolerance, short lead times, and a wide range of materials that can be used.
+                  </p>
+                  <br>
+                  <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style='background-image: url("assets/img/more-services-3.jpg");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card" style='background-image: url("/assets/img/services/laser%20cutting.jpg");' data-aos="fade-up" data-aos-delay="200">
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">Nive Lodo</a></h5>
-                  <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
-                  <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                  <h5 class="card-title"><nuxt-link to="services">Laser Cutting</nuxt-link></h5>
+                  <p class="card-text">
+                        Laser cutting is a technology that uses a laser to vaporize materials, resulting in a cut edge. Our partners have different laser cutting machines which can give you parts with thickness ranging from 0.5mm to as much as 20mm with high accuracy.
+                  </p>
+                  <br>
+                  <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style='background-image: url("/assets/img/services/Retro_Systems_Waterjet.jpg");' data-aos="fade-up" data-aos-delay="200">
+                <div class="card-body">
+                  <h5 class="card-title"><nuxt-link to="services">Waterjet cutting</nuxt-link></h5>
+                  <p class="card-text">
+                  A water jet cutter is an industrial tool capable of cutting a wide variety of materials using an extremely high-pressure jet of water, or a mixture of water and an abrasive substance.
+                <br>
+                    It is used to cut materials that are sensitive to heat like aluminum and even softer materials like wood and rubber. Our partners have cutting-edge water jet cutters according to your requirements.
+                </p>
+                  <br>
+                  <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style='background-image: url("/assets/img/services/finish%20grinding.jpg");' data-aos="fade-up" data-aos-delay="200">
+                <div class="card-body">
+                  <h5 class="card-title"><nuxt-link to="services">Finishing/Grinding</nuxt-link></h5>
+                  <p class="card-text">
+                    Surface grinding is the most common of the grinding operations. It is a finishing process that uses a rotating abrasive wheel to smooth the flat surface of metallic or nonmetallic materials to give them a more refined look by removing the oxide layer and impurities on workpiece surfaces.
+                <br>
+                    Our partners have wide experience and industry-standard grinding machines to provide a smooth and required finish to your workpiece.
+                  </p>
+                  <br>
+                  <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style='background-image: url("/assets/img/services/metal%20fabrication.jpg");' data-aos="fade-up" data-aos-delay="200">
+                <div class="card-body">
+                  <h5 class="card-title"><nuxt-link to="services">CNC Bending</nuxt-link></h5>
+                  <p class="card-text">
+                    Computer numerically controlled (CNC) bending is a manufacturing process that is carried out by CNC press brakes (. These machines can bend sheet metal work from just a few mm across to sections many meters long. 
+                <br>
+                    Our partners have a wide range of bending machines ranging from pipe bending to sheet bending to meet your requirements. 
+                <br>
+                    Our partners have wide experience and industry-standard grinding machines to provide a smooth and required finish to your workpiece.
+                  </p>
+                  <br>
+                  <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style='background-image: url("/assets/img/services/metals.jpg");' data-aos="fade-up" data-aos-delay="200">
+                <div class="card-body">
+                  <h5 class="card-title"><nuxt-link to="services">Material Procurement</nuxt-link></h5>
+                  <p class="card-text">
+                    Getting high-quality materials at the right rates has always been difficult, ever so much more when you don’t have the right contacts!
+                <br>
+                    Our partners offer you the best quality materials at the right rates so you can always worry-free focus on your design and leave the material procurement to us.
+                  </p>
+                  <br>
+                  <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
@@ -58,45 +135,10 @@
           </button>
         </div>
 
-        <!--<div class="row">-->
-        <!--  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
-        <!--    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">-->
-        <!--      <div class="icon"><i class="bx bxl-dribbble"></i></div>-->
-        <!--      <h4 class="title"><a href="">Lorem Ipsum</a></h4>-->
-        <!--      <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>-->
-        <!--    </div>-->
-        <!--  </div>-->
-
-        <!--  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
-        <!--    <div class="icon-box" data-aos="fade-up" data-aos-delay="200">-->
-        <!--      <div class="icon"><i class="bx bx-file"></i></div>-->
-        <!--      <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>-->
-        <!--      <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>-->
-        <!--    </div>-->
-        <!--  </div>-->
-
-        <!--  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
-        <!--    <div class="icon-box" data-aos="fade-up" data-aos-delay="300">-->
-        <!--      <div class="icon"><i class="bx bx-tachometer"></i></div>-->
-        <!--      <h4 class="title"><a href="">Magni Dolores</a></h4>-->
-        <!--      <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>-->
-        <!--    </div>-->
-        <!--  </div>-->
-
-        <!--  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
-        <!--    <div class="icon-box" data-aos="fade-up" data-aos-delay="400">-->
-        <!--      <div class="icon"><i class="bx bx-world"></i></div>-->
-        <!--      <h4 class="title"><a href="">Nemo Enim</a></h4>-->
-        <!--      <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>-->
-        <!--    </div>-->
-        <!--  </div>-->
-
-        <!--</div>-->
-
         <div class="row">
           <div class="col-md-12 col-lg-12 d-flex align-items-center justify-content-center mt-lg-5">
             <div data-aos="fade-up" data-aos-delay="0">
-              <a href="login.html" class="btn-get-a-quote">Get A Quote</a>
+              <nuxt-link to="login" class="btn-get-a-quote">Get A Quote</nuxt-link>
             </div>
           </div>
         </div>
@@ -238,7 +280,7 @@
 
     <!--    <div class="row">-->
     <!--      <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">-->
-    <!--        <img src="assets/img/counts-img.svg" alt="" class="img-fluid">-->
+    <!--        <img src="/assets/img/counts-img.svg" alt="" class="img-fluid">-->
     <!--      </div>-->
 
     <!--      <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">-->
@@ -291,7 +333,7 @@
 
     <!--    <div class="row">-->
     <!--      <div class="col-md-6 d-flex align-items-stretch">-->
-    <!--        <div class="card" style='background-image: url("assets/img/more-services-1.jpg");' data-aos="fade-up" data-aos-delay="100">-->
+    <!--        <div class="card" style='background-image: url("/assets/img/more-services-1.jpg");' data-aos="fade-up" data-aos-delay="100">-->
     <!--          <div class="card-body">-->
     <!--            <h5 class="card-title"><a href="">Lobira Duno</a></h5>-->
     <!--            <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>-->
@@ -300,7 +342,7 @@
     <!--        </div>-->
     <!--      </div>-->
     <!--      <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">-->
-    <!--        <div class="card" style='background-image: url("assets/img/more-services-2.jpg");' data-aos="fade-up" data-aos-delay="200">-->
+    <!--        <div class="card" style='background-image: url("/assets/img/more-services-2.jpg");' data-aos="fade-up" data-aos-delay="200">-->
     <!--          <div class="card-body">-->
     <!--            <h5 class="card-title"><a href="">Limere Radses</a></h5>-->
     <!--            <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>-->
@@ -310,7 +352,7 @@
 
     <!--      </div>-->
     <!--      <div class="col-md-6 d-flex align-items-stretch mt-4">-->
-    <!--        <div class="card" style='background-image: url("assets/img/more-services-3.jpg");' data-aos="fade-up" data-aos-delay="100">-->
+    <!--        <div class="card" style='background-image: url("/assets/img/more-services-3.jpg");' data-aos="fade-up" data-aos-delay="100">-->
     <!--          <div class="card-body">-->
     <!--            <h5 class="card-title"><a href="">Nive Lodo</a></h5>-->
     <!--            <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>-->
@@ -319,7 +361,7 @@
     <!--        </div>-->
     <!--      </div>-->
     <!--      <div class="col-md-6 d-flex align-items-stretch mt-4">-->
-    <!--        <div class="card" style='background-image: url("assets/img/more-services-4.jpg");' data-aos="fade-up" data-aos-delay="200">-->
+    <!--        <div class="card" style='background-image: url("/assets/img/more-services-4.jpg");' data-aos="fade-up" data-aos-delay="200">-->
     <!--          <div class="card-body">-->
     <!--            <h5 class="card-title"><a href="">Pale Treda</a></h5>-->
     <!--            <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>-->
@@ -430,14 +472,17 @@
           <!-- <p>Magnam dolores commodi suscipit eum quidem consectetur velit</p> -->
         </div>
 
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
+        <div id="testimonials-slider" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
+                  <!-- <img src="/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
                   <h3>Arindrajit Chowdhary</h3>
                   <h4>Professor IITB</h4>
                   <p>
@@ -447,12 +492,11 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
+            </div>
+            <div class="carousel-item">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
+                  <!-- <img src="/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
                   <h3>Gaurav Desale</h3>
                   <h4>Lab associate at IITB</h4>
                   <p>
@@ -462,12 +506,11 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
+            </div>
+            <div class="carousel-item">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
+                  <!-- <img src="/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
                   <h3>Prathik Reddy</h3>
                   <h4>System engineer at IITB Racing</h4>
                   <p>
@@ -477,398 +520,25 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
+            <!--<div class="carousel-item">-->
+            <!--  <img src="..." class="d-block w-100" alt="...">-->
+            <!--</div>-->
           </div>
-          <div class="swiper-pagination"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonials-slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
       </div>
     </section>
     <!-- End Testimonials Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <!--<section id="portfolio" class="portfolio">-->
-    <!--  <div class="container">-->
-
-    <!--    <div class="section-title" data-aos="fade-up">-->
-    <!--      <h2>Portfolio</h2>-->
-    <!--      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>-->
-    <!--    </div>-->
-
-    <!--    <div class="row" data-aos="fade-up" data-aos-delay="200">-->
-    <!--      <div class="col-lg-12 d-flex justify-content-center">-->
-    <!--        <ul id="portfolio-flters">-->
-    <!--          <li data-filter="*" class="filter-active">All</li>-->
-    <!--          <li data-filter=".filter-app">App</li>-->
-    <!--          <li data-filter=".filter-card">Card</li>-->
-    <!--          <li data-filter=".filter-web">Web</li>-->
-    <!--        </ul>-->
-    <!--      </div>-->
-    <!--    </div>-->
-
-    <!--    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>App 1</h4>-->
-    <!--            <p>App</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>Web 3</h4>-->
-    <!--            <p>Web</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>App 2</h4>-->
-    <!--            <p>App</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>Card 2</h4>-->
-    <!--            <p>Card</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>Web 2</h4>-->
-    <!--            <p>Web</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>App 3</h4>-->
-    <!--            <p>App</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>Card 1</h4>-->
-    <!--            <p>Card</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>Card 3</h4>-->
-    <!--            <p>Card</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
-    <!--        <div class="portfolio-wrap">-->
-    <!--          <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">-->
-    <!--          <div class="portfolio-info">-->
-    <!--            <h4>Web 3</h4>-->
-    <!--            <p>Web</p>-->
-    <!--            <div class="portfolio-links">-->
-    <!--              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>-->
-    <!--              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--    </div>-->
-
-    <!--  </div>-->
-    <!--</section>-->
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Team Section ======= -->
-    <!--<section id="team" class="team section-bg">-->
-    <!--  <div class="container">-->
-
-    <!--    <div class="section-title" data-aos="fade-up">-->
-    <!--      <h2>Team</h2>-->
-    <!--      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>-->
-    <!--    </div>-->
-
-    <!--    <div class="row">-->
-
-    <!--      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">-->
-    <!--        <div class="member" data-aos="fade-up" data-aos-delay="100">-->
-    <!--          <div class="member-img">-->
-    <!--            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">-->
-    <!--            <div class="social">-->
-    <!--              <a href=""><i class="bi bi-twitter"></i></a>-->
-    <!--              <a href=""><i class="bi bi-facebook"></i></a>-->
-    <!--              <a href=""><i class="bi bi-instagram"></i></a>-->
-    <!--              <a href=""><i class="bi bi-linkedin"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="member-info">-->
-    <!--            <h4>Walter White</h4>-->
-    <!--            <span>Chief Executive Officer</span>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">-->
-    <!--        <div class="member" data-aos="fade-up" data-aos-delay="200">-->
-    <!--          <div class="member-img">-->
-    <!--            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">-->
-    <!--            <div class="social">-->
-    <!--              <a href=""><i class="bi bi-twitter"></i></a>-->
-    <!--              <a href=""><i class="bi bi-facebook"></i></a>-->
-    <!--              <a href=""><i class="bi bi-instagram"></i></a>-->
-    <!--              <a href=""><i class="bi bi-linkedin"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="member-info">-->
-    <!--            <h4>Sarah Jhonson</h4>-->
-    <!--            <span>Product Manager</span>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">-->
-    <!--        <div class="member" data-aos="fade-up" data-aos-delay="300">-->
-    <!--          <div class="member-img">-->
-    <!--            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">-->
-    <!--            <div class="social">-->
-    <!--              <a href=""><i class="bi bi-twitter"></i></a>-->
-    <!--              <a href=""><i class="bi bi-facebook"></i></a>-->
-    <!--              <a href=""><i class="bi bi-instagram"></i></a>-->
-    <!--              <a href=""><i class="bi bi-linkedin"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="member-info">-->
-    <!--            <h4>William Anderson</h4>-->
-    <!--            <span>CTO</span>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">-->
-    <!--        <div class="member" data-aos="fade-up" data-aos-delay="400">-->
-    <!--          <div class="member-img">-->
-    <!--            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">-->
-    <!--            <div class="social">-->
-    <!--              <a href=""><i class="bi bi-twitter"></i></a>-->
-    <!--              <a href=""><i class="bi bi-facebook"></i></a>-->
-    <!--              <a href=""><i class="bi bi-instagram"></i></a>-->
-    <!--              <a href=""><i class="bi bi-linkedin"></i></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="member-info">-->
-    <!--            <h4>Amanda Jepson</h4>-->
-    <!--            <span>Accountant</span>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--    </div>-->
-
-    <!--  </div>-->
-    <!--</section>-->
-    <!-- End Team Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!--<section id="pricing" class="pricing">-->
-    <!--  <div class="container">-->
-
-    <!--    <div class="section-title">-->
-    <!--      <h2>Pricing</h2>-->
-    <!--      <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p>-->
-    <!--    </div>-->
-
-    <!--    <div class="row">-->
-
-    <!--      <div class="col-lg-4 col-md-6">-->
-    <!--        <div class="box" data-aos="zoom-in-right" data-aos-delay="200">-->
-    <!--          <h3>Free</h3>-->
-    <!--          <h4><sup>$</sup>0<span> / month</span></h4>-->
-    <!--          <ul>-->
-    <!--            <li>Aida dere</li>-->
-    <!--            <li>Nec feugiat nisl</li>-->
-    <!--            <li>Nulla at volutpat dola</li>-->
-    <!--            <li class="na">Pharetra massa</li>-->
-    <!--            <li class="na">Massa ultricies mi</li>-->
-    <!--          </ul>-->
-    <!--          <div class="btn-wrap">-->
-    <!--            <a href="#" class="btn-buy">Buy Now</a>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 mt-4 mt-md-0">-->
-    <!--        <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">-->
-    <!--          <h3>Business</h3>-->
-    <!--          <h4><sup>$</sup>19<span> / month</span></h4>-->
-    <!--          <ul>-->
-    <!--            <li>Aida dere</li>-->
-    <!--            <li>Nec feugiat nisl</li>-->
-    <!--            <li>Nulla at volutpat dola</li>-->
-    <!--            <li>Pharetra massa</li>-->
-    <!--            <li class="na">Massa ultricies mi</li>-->
-    <!--          </ul>-->
-    <!--          <div class="btn-wrap">-->
-    <!--            <a href="#" class="btn-buy">Buy Now</a>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--      <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">-->
-    <!--        <div class="box" data-aos="zoom-in-left" data-aos-delay="200">-->
-    <!--          <h3>Developer</h3>-->
-    <!--          <h4><sup>$</sup>29<span> / month</span></h4>-->
-    <!--          <ul>-->
-    <!--            <li>Aida dere</li>-->
-    <!--            <li>Nec feugiat nisl</li>-->
-    <!--            <li>Nulla at volutpat dola</li>-->
-    <!--            <li>Pharetra massa</li>-->
-    <!--            <li>Massa ultricies mi</li>-->
-    <!--          </ul>-->
-    <!--          <div class="btn-wrap">-->
-    <!--            <a href="#" class="btn-buy">Buy Now</a>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <!--    </div>-->
-
-    <!--  </div>-->
-    <!--</section>-->
-    <!-- End Pricing Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
-    <!--<section id="faq" class="faq">-->
-    <!--  <div class="container">-->
-
-    <!--    <div class="section-title" data-aos="fade-up">-->
-    <!--      <h2>Frequently Asked Questions</h2>-->
-    <!--    </div>-->
-
-    <!--    <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">-->
-    <!--      <div class="col-lg-5">-->
-    <!--        <i class="ri-question-line"></i>-->
-    <!--        <h4>Non consectetur a erat nam at lectus urna duis?</h4>-->
-    <!--      </div>-->
-    <!--      <div class="col-lg-7">-->
-    <!--        <p>-->
-    <!--          Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.-->
-    <!--        </p>-->
-    <!--      </div>-->
-    <!--    </div>&lt;!&ndash; End F.A.Q Item&ndash;&gt;-->
-
-    <!--    <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">-->
-    <!--      <div class="col-lg-5">-->
-    <!--        <i class="ri-question-line"></i>-->
-    <!--        <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>-->
-    <!--      </div>-->
-    <!--      <div class="col-lg-7">-->
-    <!--        <p>-->
-    <!--          Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.-->
-    <!--        </p>-->
-    <!--      </div>-->
-    <!--    </div>&lt;!&ndash; End F.A.Q Item&ndash;&gt;-->
-
-    <!--    <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">-->
-    <!--      <div class="col-lg-5">-->
-    <!--        <i class="ri-question-line"></i>-->
-    <!--        <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>-->
-    <!--      </div>-->
-    <!--      <div class="col-lg-7">-->
-    <!--        <p>-->
-    <!--          Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.-->
-    <!--        </p>-->
-    <!--      </div>-->
-    <!--    </div>&lt;!&ndash; End F.A.Q Item&ndash;&gt;-->
-
-    <!--    <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">-->
-    <!--      <div class="col-lg-5">-->
-    <!--        <i class="ri-question-line"></i>-->
-    <!--        <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>-->
-    <!--      </div>-->
-    <!--      <div class="col-lg-7">-->
-    <!--        <p>-->
-    <!--          Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt pariatur error doloribus fuga.-->
-    <!--        </p>-->
-    <!--      </div>-->
-    <!--    </div>&lt;!&ndash; End F.A.Q Item&ndash;&gt;-->
-
-    <!--    <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">-->
-    <!--      <div class="col-lg-5">-->
-    <!--        <i class="ri-question-line"></i>-->
-    <!--        <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>-->
-    <!--      </div>-->
-    <!--      <div class="col-lg-7">-->
-    <!--        <p>-->
-    <!--          Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in-->
-    <!--        </p>-->
-    <!--      </div>-->
-    <!--    </div>&lt;!&ndash; End F.A.Q Item&ndash;&gt;-->
-
-    <!--  </div>-->
-    <!--</section>-->
-    <!-- End F.A.Q Section -->
 
     <contact-us-footer />
   </main>
@@ -884,5 +554,35 @@ import HomeHeroSection from '../components/HomeHeroSection.vue';
 </script>
 
 <style>
-
+  .carousel-control-next, .carousel-control-prev{
+    height: fit-content;
+    color: black;
+    margin: auto;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    background: white;
+    border-radius: 50%;
+    background-size: 69%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+  }
+  .carousel-control-next-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+  .carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  }
+  #testimonials-slider .carousel-control-next{
+    right: -35px!important;
+  }
+  #testimonials-slider .carousel-control-prev{
+    left: 15px!important;
+  }
+  #testimonials-slider .carousel-indicators{
+    bottom: 15px;
+  }
+  #testimonials-slider .carousel-indicators [data-bs-target]{
+    background-color: #000;
+  }
 </style>
