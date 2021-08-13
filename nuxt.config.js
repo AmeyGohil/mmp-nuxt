@@ -22,7 +22,7 @@ export default {
 
   target: 'static',
 
-  devtools: true,
+  
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -61,5 +61,11 @@ export default {
 
   router: {
     linkActiveClass: 'active'
+  },
+  vue: {
+    config: {
+      productionTip: true,
+      devtools: true
+    }
   }
 }

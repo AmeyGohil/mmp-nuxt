@@ -23,97 +23,21 @@
                 <table class="table my-0" id="dataTable">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>File</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                            <th>Quotation</th>
-                            <th>Details</th>
+                            <th v-for="(col,i) in orders.columns" v-bind:key="i">
+                              {{col.title}}
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>33</td>
-                            <td>2008/11/28</td>
-                            <td>$162,700</td>
+                        <tr v-for="(row,i) in processedOrdersForTable" v-bind:key="i">
+                            <td v-for="(col,j) in orders.columns" v-bind:key="j" v-html="row[col.slug]">
+                            
+                            </td>
                         </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Angelica Ramos</td>
-                            <td>Chief Executive Officer(CEO)</td>
-                            <td>London</td>
-                            <td>47</td>
-                            <td>2009/10/09<br></td>
-                            <td>$1,200,000</td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Ashton Cox</td>
-                            <td>Junior Technical Author</td>
-                            <td>San Francisco</td>
-                            <td>66</td>
-                            <td>2009/01/12<br></td>
-                            <td>$86,000</td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar4.jpeg">Bradley Greer</td>
-                            <td>Software Engineer</td>
-                            <td>London</td>
-                            <td>41</td>
-                            <td>2012/10/13<br></td>
-                            <td>$132,000</td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar5.jpeg">Brenden Wagner</td>
-                            <td>Software Engineer</td>
-                            <td>San Francisco</td>
-                            <td>28</td>
-                            <td>2011/06/07<br></td>
-                            <td>$206,850</td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Brielle Williamson</td>
-                            <td>Integration Specialist</td>
-                            <td>New York</td>
-                            <td>61</td>
-                            <td>2012/12/02<br></td>
-                            <td>$372,000</td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Bruno Nash<br></td>
-                            <td>Software Engineer</td>
-                            <td>London</td>
-                            <td>38</td>
-                            <td>2011/05/03<br></td>
-                            <td>$163,500</td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Caesar Vance</td>
-                            <td>Pre-Sales Support</td>
-                            <td>New York</td>
-                            <td>21</td>
-                            <td>2011/12/12<br></td>
-                            <td>$106,450</td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar4.jpeg">Cara Stevens</td>
-                            <td>Sales Assistant</td>
-                            <td>New York</td>
-                            <td>46</td>
-                            <td>2011/12/06<br></td>
-                            <td>$145,600</td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar5.jpeg">Cedric Kelly</td>
-                            <td>Senior JavaScript Developer</td>
-                            <td>Edinburgh</td>
-                            <td>22</td>
-                            <td>2012/03/29<br></td>
-                            <td>$433,060</td>
-                        </tr>
+                       
+                      
                     </tbody>
-                    <tfoot>
+                    <!-- <tfoot>
                         <tr>
                             <td><strong>Name</strong></td>
                             <td><strong>Position</strong></td>
@@ -122,7 +46,7 @@
                             <td><strong>Start date</strong></td>
                             <td><strong>Salary</strong></td>
                         </tr>
-                    </tfoot>
+                    </tfoot> -->
                 </table>
             </div>
             <div class="row">
@@ -152,7 +76,47 @@ export default {
   components:{},
   data () {
     return {
-      img:'',
+      orders:{
+          data:[],
+          columns:[
+              {
+                title:'Name',
+                slug:'name'
+              },
+              {
+                title:'Description',
+                slug:'description'
+              },
+              {
+                title:'Image',
+                slug:'image_url_logo'
+              },
+              {
+                title:'Last Updated',
+                slug:'updated_at'
+              },
+              {
+                title:"Status",
+                slug:'status'
+              }
+          ]
+      }
+    }
+  },
+  async fetch(){
+      this.orders.data = await this.$strapi.find('orders',{'users_permissions_user.id':[this.$strapi.user.id]})
+      console.log("LOG: orders:",this.orders.data)
+  },
+  computed:{
+    processedOrdersForTable(){
+      console.log("DEBUG: processedOrders",this.orders.data)
+      return this.orders.data.map( i =>(
+        {
+          ...i,
+          updated_at: i.updated_at.slice(0,10),
+          image_url_logo: i.image_url.url,
+          username: i.users_permissions_user.username
+      }))
     }
   }
 }

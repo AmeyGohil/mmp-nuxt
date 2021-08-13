@@ -1,7 +1,7 @@
 <template>
     <div class="mx-5">
         <div class="d-sm-flex justify-content-between align-items-center mb-4">
-            <h3 class="text-dark mb-0">Upload a new design</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="index.html#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
+            <h3 class="text-dark mb-0">Upload a new design</h3>
         </div>
         <form @submit.prevent="placeOrder">
             
