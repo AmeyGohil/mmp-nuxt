@@ -6,6 +6,7 @@
             </a>
             <hr class="sidebar-divider my-0">
             <ul class="navbar-nav text-light" id="accordionSidebar">
+
                 <li class="nav-item" v-if="role==='customer'">
                     <nuxt-link class="nav-link" :to="'/'+role">
                         <i class="fas fa-tachometer-alt"></i>
@@ -22,10 +23,12 @@
                         </span>
                     </nuxt-link>
                 </li>
+
                 <li class="nav-item"><nuxt-link class="nav-link" :to="'/' + role + '/profile'"><i class="fas fa-user"></i><span>Profile</span></nuxt-link></li>
                 <li class="nav-item"><nuxt-link class="nav-link" :to="'/' + role + '/projects'"><i class="fas fa-table"></i><span>My Projects</span></nuxt-link></li> 
                 <li class="nav-item"><nuxt-link class="nav-link" :to="'/' + role + '/current_project'"><i class="fas fa-table"></i><span>Current Project</span></nuxt-link></li>
-                <li class="nav-item"><nuxt-link class="nav-link" :to="'/' + role + '/view_quotation'" v-show="role==='customer'"><i class="fas fa-table"></i><span>View Quotation</span></nuxt-link></li>
+                <li class="nav-item" v-if="role==='customer'"><nuxt-link class="nav-link" :to="'/' + role + '/view_quotation'"><i class="fas fa-table"></i><span>View Quotation</span></nuxt-link></li>
+                <li class="nav-item" v-if="role==='manufacturer'"><nuxt-link class="nav-link" :to="'/' + role + '/projects_bid'"><i class="fas fa-table"></i><span>Bid for Projects</span></nuxt-link></li>
             </ul>
             <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
         </div>
