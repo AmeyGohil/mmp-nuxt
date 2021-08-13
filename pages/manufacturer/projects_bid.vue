@@ -34,8 +34,33 @@
                             <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
                             <td>Accountant</td>
                             <td>Tokyo</td>
-                            <td>2008/11/28</td>
-                            <td><div><button class="btn">Submit</button></div></td>
+                            <td>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">Submit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">Submit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">Submit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">Submit</button>
+                            </td>
                         </tr>
                     </tbody>
                     <!-- <tfoot>

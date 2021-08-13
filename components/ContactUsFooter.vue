@@ -25,17 +25,17 @@
             <div class="info">
               <div>
                 <i class="ri-map-pin-line"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <p>IIT Student Hostel 18<br>Powai, Mumbai 400076</p>
               </div>
 
               <div>
                 <i class="ri-mail-send-line"></i>
-                <p>info@example.com</p>
+                <p><a href="mailto:makemypart.in@gmail.com">makemypart.in@gmail.com</a></p>
               </div>
 
               <div>
                 <i class="ri-phone-line"></i>
-                <p>+1 5589 55488 55s</p>
+                <p><a href="tel:9012345678">9012345678</a></p>
               </div>
 
             </div>
