@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <h3 class="text-dark mb-4">Bid for Projects</h3>
+    <h3 class="text-dark mb-4">name_of_selected_project</h3>
     <div class="card shadow">
         <div class="card-header py-3">
             <p class="text-primary m-0 fw-bold">Project Info</p>
@@ -24,7 +24,6 @@
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>File</th>
                             <th>Date</th>
                             <th>Quotation</th>
                         </tr>
@@ -33,33 +32,25 @@
                         <tr>
                             <td><img class="rounded-circle me-2" width="30" height="30" src="/assets/img/avatars/avatar1.jpeg">Airi Satou</td>
                             <td>Accountant</td>
-                            <td>Tokyo</td>
                             <td>
-                                <button class="btn btn-primary btn-sm mb-0" type="submit">Submit</button>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">View</button>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">Confirm</button>
                             </td>
                         </tr>
                         <tr>
                             <td><img class="rounded-circle me-2" width="30" height="30" src="/assets/img/avatars/avatar1.jpeg">Airi Satou</td>
                             <td>Accountant</td>
-                            <td>Tokyo</td>
                             <td>
-                                <button class="btn btn-primary btn-sm mb-0" type="submit">Submit</button>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">View</button>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">Confirm</button>
                             </td>
                         </tr>
                         <tr>
                             <td><img class="rounded-circle me-2" width="30" height="30" src="/assets/img/avatars/avatar1.jpeg">Airi Satou</td>
                             <td>Accountant</td>
-                            <td>Tokyo</td>
                             <td>
-                                <button class="btn btn-primary btn-sm mb-0" type="submit">Submit</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="/assets/img/avatars/avatar1.jpeg">Airi Satou</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm mb-0" type="submit">Submit</button>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">View</button>
+                                <button class="btn btn-primary btn-sm mb-0" type="submit">Confirm</button>
                             </td>
                         </tr>
                     </tbody>

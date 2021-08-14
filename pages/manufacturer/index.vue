@@ -1,11 +1,12 @@
 <template>
     <div>
         <div class="container-fluid">
-                    <h3 class="text-dark mb-1">Quotation HTML</h3>
+                    <!-- <h3 class="text-dark mb-1">Upload Quotation</h3> -->
         </div>
-        <div class="card shadow mb-4">
+        <div class="card mb-4">
             <div class="card-header py-3">
-                <h6 class="text-primary m-0 fw-bold">Basic Card Example</h6>
+                    <h3 class="text-dark mb-1">Upload Quotation</h3>
+                <!-- <h6 class="text-primary m-0 fw-bold">Basic Card Example</h6> -->
             </div>
             <div class="card-body">
                 <section>
@@ -24,11 +25,11 @@
                                                         <div class="row">
                                                             <div class="col-md-2 col-xl-2 align-self-center font-md text-dark-blue"><label class="col-form-label p-0" for="table-no"><strong>Table No.:</strong><br></label></div>
                                                             <div class="col-md-4 col-xl-3">
-                                                                <div class="mb-0 form-group"><select class="form-select form-select-sm font-sm">
+                                                                <!-- <div class="mb-0 form-group"><select class="form-select form-select-sm font-sm">
                                                                     <option value="1" selected="">-- Choose Table --</option>
                                                                     <option value="1">SG1-TB1</option>
                                                                     <option value="2">SG1-TB2</option>
-                                                                </select></div>
+                                                                </select></div> -->
                                                             </div>
                                                             <div class="col-md-2 col-xl-2 offset-md-3 offset-xl-4 align-self-center"><button class="btn btn-info btn-sm d-block add-row btn-xs w-100" type="button"><i class="fa fa-plus"></i><strong>&nbsp;Add Item</strong></button></div>
                                                             <div class="col-md-1 col-xl-1 align-self-center"><button class="btn btn-danger btn-sm d-block delete-row btn-xs w-100" type="button"><i class="fa fa-trash-o"></i></button></div>
@@ -86,25 +87,25 @@
                                                             <div class="col-xl-7 offset-xl-0 text-end align-self-center">
                                                                 <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text" disabled=""></div>
                                                             </div>
-                                                            <div class="col-xl-5 offset-xl-0 align-self-center">
+                                                            <!-- <div class="col-xl-5 offset-xl-0 align-self-center">
                                                                 <h6 class="mb-0 font-sm">Parcel charges:</h6>
                                                             </div>
                                                             <div class="col-xl-7 offset-xl-0 text-end align-self-center">
                                                                 <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text"></div>
-                                                            </div>
-                                                            <div class="col-xl-5 offset-xl-0 align-self-center">
+                                                            </div> -->
+                                                            <!-- <div class="col-xl-5 offset-xl-0 align-self-center">
                                                                 <h6 class="mb-0 font-sm">Discount (%)</h6>
                                                             </div>
                                                             <div class="col-xl-7 offset-xl-0 text-end align-self-center">
                                                                 <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text"></div>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="col-xl-5 offset-xl-0 align-self-center">
                                                                 <h6 class="mb-0 font-sm">Net amount:</h6>
                                                             </div>
                                                             <div class="col-xl-7 offset-xl-0 text-end align-self-center">
                                                                 <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text" disabled=""></div>
                                                             </div>
-                                                            <div class="col-xl-5 offset-xl-0 align-self-center">
+                                                            <!-- <div class="col-xl-5 offset-xl-0 align-self-center">
                                                                 <h6 class="mb-0 font-sm">Payment mode:</h6>
                                                             </div>
                                                             <div class="col-xl-7 offset-xl-0 text-end align-self-center">
@@ -124,8 +125,8 @@
                                                                 <div class="mb-1 form-group"><select class="form-select form-select-sm font-sm" id="payment_stat-2" onchange="fn3();">
                                                                     <option value="unpaid">Not Paid</option>
                                                                     <option value="paid">Paid</option>
-                                                                </select></div>
-                                                            </div>
+                                                                </select></div> -->
+                                                            <!-- </div> -->
                                                             <div class="col-xl-6 offset-xl-0 text-end"><a class="btn btn-info btn-sm d-block mt-3 mb-1 btn-smd w-100" role="button" id="inv_btn-1" target="_blank" href="https://mmpmanufacturer.bss.design/print-invoice.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-arrow-right">
                                                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
                                                                 </svg><strong>Submit</strong><br></a></div>

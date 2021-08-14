@@ -22,101 +22,101 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="card" style='background-image: url("/assets/img/services/industry-technology-machine-machining-machinery-industrial.jpg");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card" style='background-image: url(/assets/img/services/industry-technology-machine-machining-machinery-industrial.jpg);' data-aos="fade-up" data-aos-delay="100">
                 <div class="card-body">
                   <h5 class="card-title"><nuxt-link to="services">CNC Milling</nuxt-link></h5>
-                  <p class="card-text">
+                  <!-- <p class="card-text">
                         Milling is the process of machining using rotary cutters to remove material by advancing a cutter into a workpiece. We provide cutting-edge milling services offered by our partners to deliver products according to your requirements. 
                         <br>
                         Milling is best applied as a secondary process to an already machined workpiece. It helps to define features and serves as a “finishing coat”. Use milling as a secondary process to add features such as holes, slots, pockets, and contours.
                   </p>
-                  <br>
+                  <br> -->
                   <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style='background-image: url("/assets/img/services/cnc%20turning.jpg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card" style='background-image: url(/assets/img/services/cnc%20turning.jpg);' data-aos="fade-up" data-aos-delay="200">
                 <div class="card-body">
                   <h5 class="card-title"><nuxt-link to="services">CNC Turning</nuxt-link></h5>
-                  <p class="card-text">
+                  <!-- <p class="card-text">
                     Turning involves rotation of the work piece while the cutting tool moves in a linear motion. This results in a cylindrical shape. A lathe is the machine of choice for all turning operations.
                     <br>
                         Our partners have industry-standard lathe machines for all your turning requirements. We offer both CNC and manual lathes depending on your needs and budget.
                     <br>
                         The benefits of turning are - good tolerance, short lead times, and a wide range of materials that can be used.
                   </p>
-                  <br>
+                  <br> -->
                   <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style='background-image: url("/assets/img/services/laser%20cutting.jpg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card" style='background-image: url(/assets/img/services/laser%20cutting.jpg);' data-aos="fade-up" data-aos-delay="200">
                 <div class="card-body">
                   <h5 class="card-title"><nuxt-link to="services">Laser Cutting</nuxt-link></h5>
-                  <p class="card-text">
+                  <!-- <p class="card-text">
                         Laser cutting is a technology that uses a laser to vaporize materials, resulting in a cut edge. Our partners have different laser cutting machines which can give you parts with thickness ranging from 0.5mm to as much as 20mm with high accuracy.
                   </p>
-                  <br>
+                  <br> -->
                   <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style='background-image: url("/assets/img/services/Retro_Systems_Waterjet.jpg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card" style='background-image: url(/assets/img/services/Retro_Systems_Waterjet.jpg);' data-aos="fade-up" data-aos-delay="200">
                 <div class="card-body">
                   <h5 class="card-title"><nuxt-link to="services">Waterjet cutting</nuxt-link></h5>
-                  <p class="card-text">
+                  <!-- <p class="card-text">
                   A water jet cutter is an industrial tool capable of cutting a wide variety of materials using an extremely high-pressure jet of water, or a mixture of water and an abrasive substance.
                 <br>
                     It is used to cut materials that are sensitive to heat like aluminum and even softer materials like wood and rubber. Our partners have cutting-edge water jet cutters according to your requirements.
                 </p>
-                  <br>
+                  <br> -->
                   <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style='background-image: url("/assets/img/services/finish%20grinding.jpg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card" style='background-image: url(/assets/img/services/finish%20grinding.jpg);' data-aos="fade-up" data-aos-delay="200">
                 <div class="card-body">
                   <h5 class="card-title"><nuxt-link to="services">Finishing/Grinding</nuxt-link></h5>
-                  <p class="card-text">
+                  <!-- <p class="card-text">
                     Surface grinding is the most common of the grinding operations. It is a finishing process that uses a rotating abrasive wheel to smooth the flat surface of metallic or nonmetallic materials to give them a more refined look by removing the oxide layer and impurities on workpiece surfaces.
                 <br>
                     Our partners have wide experience and industry-standard grinding machines to provide a smooth and required finish to your workpiece.
                   </p>
-                  <br>
+                  <br> -->
                   <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style='background-image: url("/assets/img/services/metal%20fabrication.jpg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card" style='background-image: url(/assets/img/services/metal%20fabrication.jpg);' data-aos="fade-up" data-aos-delay="200">
                 <div class="card-body">
                   <h5 class="card-title"><nuxt-link to="services">CNC Bending</nuxt-link></h5>
-                  <p class="card-text">
+                  <!-- <p class="card-text">
                     Computer numerically controlled (CNC) bending is a manufacturing process that is carried out by CNC press brakes (. These machines can bend sheet metal work from just a few mm across to sections many meters long. 
                 <br>
                     Our partners have a wide range of bending machines ranging from pipe bending to sheet bending to meet your requirements. 
                 <br>
                     Our partners have wide experience and industry-standard grinding machines to provide a smooth and required finish to your workpiece.
-                  </p>
-                  <br>
+                  </p> -->
+                  <!-- <br> -->
                   <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style='background-image: url("/assets/img/services/metals.jpg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card" style='background-image: url(/assets/img/services/metals.jpg);' data-aos="fade-up" data-aos-delay="200">
                 <div class="card-body">
                   <h5 class="card-title"><nuxt-link to="services">Material Procurement</nuxt-link></h5>
-                  <p class="card-text">
+                  <!-- <p class="card-text">
                     Getting high-quality materials at the right rates has always been difficult, ever so much more when you don’t have the right contacts!
                 <br>
                     Our partners offer you the best quality materials at the right rates so you can always worry-free focus on your design and leave the material procurement to us.
                   </p>
-                  <br>
+                  <br> -->
                   <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
                 </div>
               </div>
@@ -155,7 +155,7 @@
           <h2>Process Flow</h2>
         </div>
 
-        <div class="content">
+        <div class="content" data-aos="fade-up">
           <div class="template-wrap">
 
             <div class="ep-flowchart" id="ep-flowchart">
@@ -476,24 +476,24 @@
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <!-- <button type="button" data-bs-target="#testimonials-slider" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
+              <!-- <div class="testimonial-wrap"> -->
+                <!-- <div class="testimonial-item"> -->
                   <!-- <img src="/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
-                  <h3>Arindrajit Chowdhary</h3>
-                  <h4>Professor IITB</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    I have used their services and have been extremely satisfied with the quality of the product and their professionalism. I have recommended them to all my Phd and masters students for their projects as well.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
+                  <!-- <h3>Arindrajit Chowdhary</h3> -->
+                  <!-- <h4>Professor IITB</h4> -->
+                  <!-- <p> -->
+                    <!-- <i class="bx bxs-quote-alt-left quote-icon-left"></i> -->
+                    <!-- I have used their services and have been extremely satisfied with the quality of the product and their professionalism. I have recommended them to all my Phd and masters students for their projects as well. -->
+                    <!-- <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
+                  <!-- </p> -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="carousel-item"> -->
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <!-- <img src="/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
@@ -573,16 +573,37 @@ import HomeHeroSection from '../components/HomeHeroSection.vue';
   .carousel-control-prev-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
   }
-  #testimonials-slider .carousel-control-next{
+  #testimonials .carousel-control-next{
     right: -50px!important;
   }
-  #testimonials-slider .carousel-control-prev{
+  #testimonials .carousel-control-prev{
     left: 0px!important;
   }
-  #testimonials-slider .carousel-indicators{
+  #testimonials .carousel-indicators{
     bottom: 15px;
   }
-  #testimonials-slider .carousel-indicators [data-bs-target]{
+  .carousel-indicators{
+    bottom: -50px;
+  }
+  .carousel-indicators [data-bs-target]{
     background-color: #000;
+  }
+  .more-services .card-title, .services .card-title{
+    margin-bottom: 0;
+  }
+  .more-services .card-body, .services .card-body{
+    width: fit-content;
+  }
+  .more-services .card-body, .services .card-body{
+    margin: auto;
+  }
+  .more-services .card-body, .services .card-body{
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .more-services .card:hover .card-body, .services .card:hover .card-body{
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .more-services .card:hover .read-more a, .more-services .card:hover .card-title, .more-services .card:hover .card-title a, .more-services .card:hover .card-text, .services .card:hover .read-more a, .services .card:hover .card-title, .services .card:hover .card-title a, .services .card:hover .card-text{
+    color: black;
   }
 </style>

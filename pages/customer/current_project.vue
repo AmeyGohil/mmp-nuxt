@@ -49,7 +49,7 @@
                                         <div></div>
                                         <div class="media-body">
                                             <div class="d-flex media" style="overflow:visible;">
-                                                <div><img class="mr-3" style="width: 25px; height:25px;" src="assets/img/user-photo4.jpg"></div>
+                                                <div><img class="mr-3" style="width: 25px; height:25px;" src="/assets/img/user-photo4.jpg"></div>
                                                 <div style="overflow:visible;" class="media-body">
                                                     <div class="row">
                                                         <div class="col-md-12">
@@ -68,7 +68,7 @@
                                         <div></div>
                                         <div class="media-body">
                                             <div class="d-flex media" style="overflow:visible;">
-                                                <div><img class="mr-3" style="width: 25px; height:25px;" src="assets/img/user-photo4.jpg"></div>
+                                                <div><img class="mr-3" style="width: 25px; height:25px;" src="/assets/img/user-photo4.jpg"></div>
                                                 <div style="overflow:visible;" class="media-body">
                                                     <div class="row">
                                                         <div class="col-md-12">
