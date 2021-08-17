@@ -37,11 +37,14 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/vuetify'
   ],
 
-  strapi:{
-    url: process.env.STRAPI_URL || "https://api-makemypart.herokuapp.com"
+  vuetify:{
+    customVariables: ['~/assets/variables.scss']
   },
+
+  
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -50,6 +53,10 @@ export default {
     '@nuxtjs/strapi',
     '@nuxtjs/dotenv'
   ],
+  
+  strapi:{
+    url: process.env.STRAPI_URL || "https://api-makemypart.herokuapp.com"
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

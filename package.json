@@ -17,5 +17,7 @@
     "enhanced-resolve": "^5.8.2",
     "nuxt": "^2.15.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.1"
+  }
 }

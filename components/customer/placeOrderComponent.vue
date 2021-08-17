@@ -108,7 +108,6 @@ export default {
   async mounted(){
   	let services = await this.$strapi.find('services');
   	this.services = services;
-  	console.log("services:",services);
   },
   methods:{
   	placeOrder(){
