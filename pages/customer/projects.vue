@@ -148,7 +148,7 @@
 
 <script>
 export default {
-  layout: 'dashboard-manufacturer',
+  layout: 'dashboard-customer',
   components:{},
   data () {
     return {
