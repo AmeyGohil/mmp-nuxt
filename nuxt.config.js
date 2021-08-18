@@ -55,7 +55,8 @@ export default {
   ],
   
   strapi:{
-    url: process.env.STRAPI_URL || "https://api-makemypart.herokuapp.com"
+    url: process.env.STRAPI_URL || "https://api-makemypart.herokuapp.com",
+    entities:['users']
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

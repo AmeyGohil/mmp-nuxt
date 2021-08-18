@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <timeline-and-chat :status="$route.params.orderDetails.status"/>
+        <timeline-and-chat :status="$route.params.orderDetails.status" :order_id="computed_order_details.id"/>
       </div>
     </div>
   </div>
@@ -27,7 +27,12 @@ export default {
   },
   data () {
     return {
-      
+      printData:[
+        'name',
+        'description',
+        'status',
+        'created_at'
+      ]
     }
   },
   computed:{
@@ -35,11 +40,11 @@ export default {
       return this.$route.params.orderDetails
     },
     computed_order_details_for_print(){
-      return Object.keys(this.computed_order_details)
+      return this.printData
         .map(key => {
           return {
             key,
-            value: this.results[key] || 'n/a',
+            value: this.computed_order_details[key] || 'n/a',
           }
         })
     }

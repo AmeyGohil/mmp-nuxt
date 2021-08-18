@@ -29,7 +29,7 @@
           group
       >
           <v-timeline-item
-          v-for="event in updateMsgs"
+          v-for="event in computed_messages"
           :key="event.id"
           class="white--text  mb-3"
           color="pink"
@@ -39,7 +39,7 @@
               <span>{{event.sender}}</span>
           </template>
           <v-card justify-space-between>
-              <v-card-text xs7 v-text="event.msg"></v-card-text>
+              <v-card-text xs7 v-text="event.message"></v-card-text>
               <v-card-actions xs5 text-xs-right v-text="event.created_at"></v-card-actions>
           </v-card>
           </v-timeline-item>
@@ -54,18 +54,18 @@
           <span>C</span>
           </template>
           <v-text-field
-          v-model="updateMsg"
+          v-model="updateMessage"
           hide-details
           flat
           label="Have a query..."
 
-          @keydown.enter="postMsg"
+          @keydown.enter="postMessage"
           >
           <template v-slot:append>
               <v-btn
               class="mx-0"
               depressed
-              @click="postMsg"
+              @click="postMessage"
               >
               Post
               </v-btn>
@@ -77,7 +77,7 @@
 
 <script>
 export default {
-  props:['status'],
+  props:['status','order_id'],
   data(){
     return{
       timelineSteps:[
@@ -110,34 +110,59 @@ export default {
             icon: 'mdi-truck-delivery'
         }
       ],
-      updateMsgs:[],
-      updateMsg:null
+      messages:[],
+      updateMessage:null
     }
   },
+  mounted(){
+    this.fetchMessages()
+    // console.debug(this.$strapi.user)
+  },
   methods:{
-    postMsg(){
+    async postMessage(){
         const time = (new Date()).toTimeString()
-        let id = this.updateMsgs.length>0 ? this.updateMsgs.reduce((a,b)=>a.id>b.id?a:b).id : 0
-        let msg = {
+        let id = this.computed_messages.length>0 ? this.computed_messages.reduce((a,b)=>a.id>b.id?a:b).id : 0
+        let Message = {
             id: id,
-            msg: this.updateMsg,
+            message: this.updateMessage,
             sender: 'M',
             created_at: time.replace(/:\d{2}\sGMT-\d{4}\s\((.*)\)/, (match, contents, offset) => {
                 return ` ${contents.split(' ').map(v => v.charAt(0)).join('')}`
             })
         }
       // update server
-        this.updateMsgs.push(msg)
-        this.updateMsg = null
+      let user_id = this.$strapi.user.id
+      await this.$strapi.create('conversations',{
+        'message': this.updateMessage,
+        'users_permissions_user': user_id,
+        'order': this.order_id
+      })
+        this.messages.push(Message)
+        this.updateMessage = null
     },
-    fetchMsgs(){
+    async fetchMessages(){
       //fetch data
+      console.log("id",this.$strapi.user.id)
+      let id = this.$strapi.user.id
+      let Messages = await this.$strapi.find('conversations',{'users_permissions_user.id': `${id}`,'order.id': this.order_id})
+      this.messages = Messages
+      
     }
   },
   
   computed:{
     timelineForSelectedOrder(){
       return this.timelineSteps.slice(0,this.status);
+    },
+    computed_messages(){
+      return this.messages.map(item=>({
+        id: item.id,
+        message: item.message,
+        created_at: item.created_at.replace(/:\d{2}\sGMT-\d{4}\s\((.*)\)/, (match, contents, offset) => {
+            return ` ${contents.split(' ').map(v => v.charAt(0)).join('')}`
+        }),
+        sender: item.users_permissions_user.role==='1' ? 'C' : 'M'
+      }))
     }
   }
 }
