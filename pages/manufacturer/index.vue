@@ -41,7 +41,9 @@
                                                                         <th class="text-center w-3x"><strong>#</strong></th>
                                                                         <th><strong>Product name</strong></th>
                                                                         <th class="w-10x"><strong>Qty.</strong></th>
+                                                                        <th class="w-10x"><strong>Tolerance</strong></th>
                                                                         <th class="w-10x"><strong>Time</strong></th>
+                                                                        <th class="w-10x"><strong>Material</strong></th>
                                                                         <th class="w-10x"><strong>Rate</strong></th>
                                                                         <th class="w-10x"><strong>Amount</strong></th>
                                                                     </tr>
@@ -60,6 +62,9 @@
                                                                             <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="number" step="1" min="1"></div>
                                                                         </td>
                                                                         <td class="w-10x">
+                                                                            <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text"></div>
+                                                                        </td>
+                                                                        <td class="w-10x">
                                                                             <div class="mb-1 form-group"><select class="form-select form-select-sm font-sm">
                                                                                 <option value="" selected="">select</option>
                                                                                 <option value="">FULL</option>
@@ -67,10 +72,13 @@
                                                                             </select></div>
                                                                         </td>
                                                                         <td class="w-10x">
-                                                                            <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text" disabled=""></div>
+                                                                            <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text"></div>
                                                                         </td>
                                                                         <td class="w-10x">
-                                                                            <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text" disabled=""></div>
+                                                                            <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text"></div>
+                                                                        </td>
+                                                                        <td class="w-10x">
+                                                                            <div class="mb-1 form-group"><input class="form-control form-control-sm font-sm" type="text"></div>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>

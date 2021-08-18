@@ -606,4 +606,7 @@ import HomeHeroSection from '../components/HomeHeroSection.vue';
   .more-services .card:hover .read-more a, .more-services .card:hover .card-title, .more-services .card:hover .card-title a, .more-services .card:hover .card-text, .services .card:hover .read-more a, .services .card:hover .card-title, .services .card:hover .card-title a, .services .card:hover .card-text{
     color: black;
   }
+  .more-services .card, .services .card{
+    padding: 400px 20px 20px 20px;
+  }
 </style>

@@ -38,7 +38,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                     <div class="member-img">
-                    <img src="/assets/img/team/ak.jpg" class="img-fluid" alt="">
+                    <img src="/assets/img/team/ak.jpeg" class="img-fluid" alt="">
                     <!-- <div class="social">
                         <a href=""><i class="bi bi-twitter"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
@@ -74,7 +74,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="300">
                     <div class="member-img">
-                    <img src="/assets/img/team/ag.jpg" class="img-fluid" alt="">
+                    <img src="/assets/img/team/ag.jpeg" class="img-fluid" alt="">
                     <!-- <div class="social">
                         <a href=""><i class="bi bi-twitter"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
@@ -92,7 +92,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" data-aos="fade-up" data-aos-delay="400">
                     <div class="member-img">
-                    <img src="/assets/img/team/gd.jpg" class="img-fluid" alt="">
+                    <img src="/assets/img/team/gd.jpeg" class="img-fluid" alt="">
                     <!-- <div class="social">
                         <a href=""><i class="bi bi-twitter"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
@@ -127,5 +127,19 @@ import HomeHeroSection from '../components/HomeHeroSection.vue';
 </script>
 
 <style>
-
+    .team .member{
+        width: 100%;
+    }
+    .team .member .member-img {
+        position: relative;
+        height: 300px;
+        /* width: auto; */
+        display: flex;
+        /* overflow: hidden; */
+    }
+    .team .member .member-img>img {
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
 </style>
