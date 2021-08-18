@@ -22,7 +22,7 @@ export default {
 
   target: 'static',
 
-  devtools: true,
+  
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -37,11 +37,14 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/vuetify'
   ],
 
-  strapi:{
-    url: process.env.STRAPI_URL || "https://api-makemypart.herokuapp.com"
+  vuetify:{
+    customVariables: ['~/assets/variables.scss']
   },
+
+  
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -50,6 +53,11 @@ export default {
     '@nuxtjs/strapi',
     '@nuxtjs/dotenv'
   ],
+  
+  strapi:{
+    url: process.env.STRAPI_URL || "https://api-makemypart.herokuapp.com",
+    entities:['users']
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -61,5 +69,11 @@ export default {
 
   router: {
     linkActiveClass: 'active'
+  },
+  vue: {
+    config: {
+      productionTip: true,
+      devtools: true
+    }
   }
 }

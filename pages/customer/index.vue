@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import placeOrder from '~/components/customer/placeOrder'
+import placeOrder from '~/components/customer/placeOrderComponent'
 export default {
   layout: 'dashboard-customer',
   components:{

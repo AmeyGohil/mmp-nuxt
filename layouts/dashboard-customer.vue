@@ -91,10 +91,10 @@ import DashboardSideMenu from '../components/DashboardSideMenu.vue';
 						src: "https://code.jquery.com/jquery-3.5.1.min.js",
 						body: true,
 					},
-					{
-						src: `${process.env.baseUrl}/assets/js/dashboard/script.min.js`,
-						body: true,
-					},
+					// {
+					// 	src: `${process.env.baseUrl}/assets/js/dashboard/script.min.js`,
+					// 	body: true,
+					// },
 				],
 			};
 		},
