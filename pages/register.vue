@@ -36,7 +36,7 @@
 
                     <div class="form-textbox customer" style="display: none;">
                         <label for="customer-mobile">Mobile No.</label>
-                        <input v-model="customerData.mobile" type="text" name="customer-mobile" id="customer-mobile" required />
+                        <input v-model="customerData.phone" type="text" name="customer-mobile" id="customer-mobile" required />
                     </div>
 
                     <div class="form-textbox customer" style="display: none;">
@@ -124,7 +124,7 @@
           role: 'customer',
           gstNo:'',
           address:'',
-          mobile:'',
+          phone:'',
           agreeTerms: true
         },
         manufacturerData:{
@@ -134,7 +134,7 @@
           role: 'manufacturer',
           gstNo:'',
           address:'',
-          mobile:'',
+          phone:'',
           description:'',
           agreeTerms: true
         }

@@ -19,13 +19,21 @@
                 </li>
                 <notification-dropdown />
                 <div class="d-none d-sm-block topbar-divider"></div>
-                <li class="nav-item dropdown no-arrow">
-                    <div class="nav-item dropdown no-arrow">
-                        <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="index.html#">
-                            <span class="d-none d-lg-inline me-2 text-gray-600 small">{{$strapi.user.username}}</span>
-                            <i class="fa fa-user"></i>
+                <li class="nav-item no-arrow">
+                <div class="nav-item no-arrow">
+                    <a class="nav-link">
+                    <span class="d-none d-lg-inline me-2 text-gray-600 small">{{$strapi.user.username}}</span>
+                    </a>
+                </div>
+                </li>
+                <div class="d-none d-sm-block topbar-divider"></div>
+                <li class="nav-item no-arrow">
+                    <div class="nav-item no-arrow">
+                        <a class="nav-link" @click="logout" title="Click here to Sign out">
+                            
+                            <i class="fa fa-power-off"></i>
                         </a>
-                        <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                        <!-- <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
                             <nuxt-link class="dropdown-item" :to="`/${$strapi.user.role.name}/profile`">
                                 <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>
                                 &nbsp;Profile
@@ -43,7 +51,7 @@
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>
                                 &nbsp;Logout
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </li>
             </ul>
