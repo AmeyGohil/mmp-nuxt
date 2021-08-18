@@ -44,6 +44,11 @@
                     <i class="fas fa-table"></i><span>Bid for Projects</span>
                     </nuxt-link>
                     </li>
+                <li class="nav-item" v-if="role==='customer'">
+                    <nuxt-link class="nav-link" :to="'/' + role + '/view_bid'">
+                    <i class="fas fa-table"></i><span>View Bid</span>
+                    </nuxt-link>
+                    </li>
             </ul>
             <div class="text-center d-none d-md-inline">
                 <button class="btn rounded-circle border-0" id="sidebarToggle" type="button">
