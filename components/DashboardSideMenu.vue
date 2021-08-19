@@ -16,13 +16,10 @@
                     </nuxt-link>
                 </li>
                 <li class="nav-item" v-if="role==='manufacturer'">
-                    <nuxt-link class="nav-link" :to="'/'+role">
-                        <i class="fas fa-tachometer-alt"></i>
-                        <span>
-                            Upload Quotation
-                        </span>
+                    <nuxt-link class="nav-link" :to="'/' + role">
+                    <i class="fas fa-table"></i><span>Bid for Projects</span>
                     </nuxt-link>
-                </li>
+                    </li>
                 <li class="nav-item">
                     <nuxt-link class="nav-link" :to="'/' + role + '/profile'">
                     <i class="fas fa-user"></i>
@@ -39,11 +36,14 @@
                     <i class="fas fa-table"></i><span>View Quotation</span>
                     </nuxt-link>
                     </li>
-                <li class="nav-item" v-if="role==='manufacturer'">
-                    <nuxt-link class="nav-link" :to="'/' + role + '/projects_bid'">
-                    <i class="fas fa-table"></i><span>Bid for Projects</span>
+                <!-- <li class="nav-item" v-if="role==='manufacturer'">
+                    <nuxt-link class="nav-link" :to="'/' + role + '/upload_quotation'">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>
+                            Upload Quotation
+                        </span>
                     </nuxt-link>
-                    </li>
+                </li> -->
                 <li class="nav-item" v-if="role==='customer'">
                     <nuxt-link class="nav-link" :to="'/' + role + '/view_bid'">
                     <i class="fas fa-table"></i><span>View Bid</span>
