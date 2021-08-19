@@ -68,7 +68,8 @@ export default {
   },
 
   router: {
-    linkActiveClass: 'active'
+    // linkActiveClass: 'active',
+    linkExactActiveClass: 'active'
   },
   vue: {
     config: {
